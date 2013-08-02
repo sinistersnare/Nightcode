@@ -7,6 +7,7 @@ body, textarea, input {
     font-family: Helvetica, Arial;
     color: dimgray;
     border: none;
+    text-align: left;
 }
 
 a {
@@ -25,17 +26,6 @@ p {
     padding: 30px;
 }
 
-@media (max-width: 700px) {
-    .section {
-        width: 70%;
-    }
-
-    /* so the 'fork me on github' ribbon doesn't overlap the text */
-    h1 {
-        margin-bottom: 60px;
-    }
-}
-
 .dark {
     background-color: lightgray;
     border-style: solid;
@@ -45,7 +35,6 @@ p {
 
 .sectionbody {
     margin-top: 40px;
-    text-align: left;
 }
 
 .step {
@@ -57,4 +46,27 @@ p {
     color: lightgray;
     padding: 20px;
     font-size: 20px;
+}
+
+.screenshot {
+	width: 700px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.small-screenshot {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .section {
+        width: 70%;
+    }
+
+    .screenshot {
+    	width: 100%;
+	background-size: 100%;
+    }
 }
