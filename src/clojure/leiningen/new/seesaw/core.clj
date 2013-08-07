@@ -8,8 +8,8 @@
 
 (defn -main [& args]
   (invoke-later
-    (-> (frame :title "{{name}}",
-           :content "Welcome to {{name}}!",
+    (-> (frame :title "{{name}}"
+           :content "Welcome to {{name}}!"
            :on-close :exit
            :size [300 :by 300])
      center!
